@@ -1,1 +1,9 @@
-<h1>Coffee and Books</h1>
+<h1>Coffee and books</h1>
+
+{% for review in reviews %}
+    <img src="{{ review.image.url }}">
+    <h1>{{ review.title }}</h1>
+    <h3>{{ review.author }}</h3>
+    <p>{{  review.review }}</p>
+
+{% endfor %}
